@@ -1,0 +1,71 @@
+.todos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    border-radius: 36px;
+    background: #a3a2d2;
+    box-shadow:  33px 33px 87px #493838,
+             -33px -33px 87px #816464;
+    padding: 20px 0;
+}
+.todo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    width: 50%;
+}
+.todo:nth-child(even){
+    background-color: #eee;
+}
+
+.todo:last-of-type{
+    border-bottom: 0;
+}
+
+.todo .id{
+    flex: 1 1 50px;
+}
+
+.todo .content{
+    flex: 1 1 100%;
+}
+
+.todo.done .content{
+    text-decoration: line-through;
+}
+
+.todo-input{
+    display:block;
+    width: 100%;
+    padding: 10px 15px;
+    appearance: none;
+    border: none;
+    background-color: #f3f3f3;
+    margin-top: 15px;
+    font-size: 20px;
+    outline: none;
+}
+
+.todo-submit{
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    background-color: #284310;
+    margin: 15px auto;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
